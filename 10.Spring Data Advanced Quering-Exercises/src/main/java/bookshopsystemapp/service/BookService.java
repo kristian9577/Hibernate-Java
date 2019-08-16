@@ -1,0 +1,22 @@
+package bookshopsystemapp.service;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Set;
+
+public interface BookService {
+
+    void seedBooks() throws IOException;
+
+    List<String> getAllBooksTitlesAfter();
+
+    Set<String> getAllAuthorsWithBookBefore();
+
+    List<String> getAllBookTitleWithAgeRes() throws IOException;
+
+    String getAllBooksPrice();
+
+    String getAllBooksNotRealesedIn() throws IOException;
+
+    String getAllBooksByAuthor() throws IOException;
+}
